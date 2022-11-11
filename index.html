@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous" SameSite="None"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/percentage-calc-favicon.png">
+  <title>Calculadora - Kyraly</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="unselectable">Calculadora de Porcentagem Kyraly</h1>
+    <h6 class="unselectable">Clique no resultado para copiar para área de tranferência</h6>
+    <div class="methods-wrapper">
+      <div class="method-container percent-from">
+        <div class="left-elements mobile-column">
+          <div>
+            <span class="unselectable">Quanto é</span>
+            <input class="modern percent mobile-align" onkeydown="return (event.keyCode!=188);" type="number"
+              id="from-first-input"></input>
+            <span class="unselectable">%</span>
+          </div>
+          <div>
+            <span class="unselectable"><span class="spacing-desktop"></span>de</span>
+            <input class="modern long-input mobile-align mobile-from" type="number"
+              onkeydown="return (event.keyCode!=188);" id="from-second-input"></input>
+            <span class="unselectable">?<span class="mobile-from-label"></span></span>
+          </div>
+        </div>
+        <div class="right-elements">
+          <span class="result-text unselectable">=</span>
+          <input class="modern result resultmouse margin-right" readonly id="from-result-input"></input>
+        </div>
+      </div>
+      <div class="method-container percent-of">
+        <div class="left-elements mobile-column">
+          <div>
+            <input class="modern long-input no-margin-left mobile-align" type="number"
+              onkeydown="return (event.keyCode!=188);" id="of-first-input"></input>
+            <span class="unselectable">é quantos % </span>
+          </div>
+          <div>
+            <span class="unselectable"><span class="spacing-desktop"></span>de</span>
+            <input class="modern long-input mobile-align mobile-of" type="number"
+              onkeydown="return (event.keyCode!=188);" id="of-second-input"></input>
+            <span class="unselectable">?</span>
+          </div>
+        </div>
+        <div class="right-elements">
+          <span class="result-text unselectable mobile-of-label">=</span>
+          <input class="modern percent resultmouse mobile-result-of" readonly id="of-result-input"></input>
+          <span class="unselectable">%</span>
+        </div>
+      </div>
+      <div class="method-container percent-increase">
+        <div class="left-elements mobile-column tablet-column">
+          <div>
+            <span class="unselectable">Quantos % <span class="mobile-expand"></span> <span
+                class="mobile-expand-second"></span>Aumentou/Diminuiu<span class="mobile-expand-third">
+          </div>
+          <div>
+            <span class="unselectable"><span class="spacing-desktop"></span>de</span>
+            <input class="modern long-input mobile-align mobile-increase-first" onkeydown="return (event.keyCode!=188);"
+              type="number" id="increase-first-input"></input>
+          </div>
+          <div>
+            <span class="unselectable">PARA</span>
+            <input class="modern long-input mobile-align mobile-increase-second"
+              onkeydown="return (event.keyCode!=188);" type="number" id="increase-second-input"></input>
+            <span class="unselectable">?</span>
+          </div>
+        </div>
+        <div class="right-elements">
+          <span class="result-text unselectable mobile-increase-label">=</span>
+          <input class="modern percent resultmouse mobile-result-increase" readonly id="increase-result-input"></input>
+          <span class="unselectable">%</span>
+        </div>
+      </div>
+    </div>
+    <div class="setting">
+      <div class="option">
+        <label class="vertical-align unselectable">Converter resultados para R$ (em produção)</label>
+        <button class="btn convert convert-dark" id="button-convert">
+          <i class="fas fa-sync-alt" id="convert-symbol"></i>
+        </button>
+      </div>
+      <div class="option">
+        <label class="unselectable">Arredondar para a Segunda casa decimal</label>
+        <div class="switch-align">
+          <label class="switch">
+            <input type="checkbox" id="switch-rounding" checked />
+            <div></div>
+          </label>
+        </div>
+      </div>
+      <div class="option">
+        <div class="" onclick="" id="theme-symbol"></div>
+        <label class="unselectable">Dark Mode</label>
+        <div class="switch-align">
+          <label class="switch">
+            <input type="checkbox" id="switch-theme" checked />
+            <div></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="author">
+      <div class="spacing-left author-text unselectable"><img src="assets/Logo_kyraly.png" alt=""></div>
+      <a class="heart-anchor">
+        <div class="heart"></div>
+      </a>
+      <div class="author-text unselectable"><a>Por Alexandre JR</a>
+      
+      </div>
+      
+  </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
